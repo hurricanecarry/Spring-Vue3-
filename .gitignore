@@ -1,0 +1,25 @@
+# 后端
+backend/target/
+backend/*.log
+backend/.mvn/
+
+# 前端
+front/*/node_modules/
+front/*/dist/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# Playwright
+.playwright-cli/
+/homepage.png
+
+# 临时文件
+*.log
+*.tmp
