@@ -10,8 +10,7 @@ const router = createRouter({
     },
     {
       path: '/',
-      name: 'home',
-      component: () => import('@/views/home.vue'),
+      redirect: '/home',    // 根路径自动跳转到 /home
     },
     {
       path: '/home',

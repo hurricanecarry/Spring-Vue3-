@@ -19,6 +19,10 @@ Thumbs.db
 # Playwright
 .playwright-cli/
 /homepage.png
+test-results/
+
+# 依赖
+node_modules/
 
 # 临时文件
 *.log
