@@ -468,6 +468,8 @@ public class FileInfoController {
         // 图片类才设 image/*，其他类型前端不调用这里
        String ext = file.getFileName().substring(file.getFileName().lastIndexOf("."));
        res.setContentType("image/" + ext.substring(1));
+       // 图片不变，浏览器缓存 7 天，二次加载直接秒出
+       res.setHeader("Cache-Control", "public, max-age=86400, immutable");
        Files.copy(p, res.getOutputStream());
    }
    

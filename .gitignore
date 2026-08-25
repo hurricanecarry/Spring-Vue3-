@@ -27,3 +27,12 @@ node_modules/
 # 临时文件
 *.log
 *.tmp
+
+
+#test--jmeter
+test/jmeter/
+test/*.md
+jmeter/
+jmeter.*
+AGENTS.md
+
